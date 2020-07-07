@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="5000">
+       <KeyFrameSet>
+           <KeyPosition
+               motion:motionTarget="@+id/ivCogumelo"
+               motion:percentX="0.5" />
+           <KeyPosition
+               motion:motionTarget="@+id/ivCogumelo"
+               motion:framePosition="50"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.25" />
+           <KeyPosition
+               motion:motionTarget="@+id/ivMario"
+               motion:framePosition="50"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.3" />
+           <KeyAttribute
+               motion:motionTarget="@+id/ivCogumelo"
+               motion:framePosition="50"
+               android:scaleX="2.0"
+               android:scaleY="2.0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/ivMario"
+               motion:framePosition="50"
+               android:alpha="0.1" />
+       </KeyFrameSet>
+        <OnClick />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_marginEnd="32dp"
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:id="@+id/ivCogumelo"
+            android:layout_marginBottom="32dp" />
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="100dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:id="@+id/ivMario"
+            android:layout_marginTop="32dp" />
+    </ConstraintSet>
+</MotionScene>
