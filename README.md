@@ -5,10 +5,10 @@ Simple project using **MotionLayout** to handle different animations
 
 
 ### 📷 How is this App
-<img src="Screenshot_1594142366.png" width="25%"></img>
-<img src="Screenshot_1594142371.png" width="25%"></img>
-<img src="Screenshot_1594142372.png" width="25%"></img>
-<img src="Screenshot_1594142373.png" width="25%"></img>
+<img src="Screenshot_1594142366.png" width="20%"></img>
+<img src="Screenshot_1594142371.png" width="20%"></img>
+<img src="Screenshot_1594142372.png" width="20%"></img>
+<img src="Screenshot_1594142373.png" width="20%"></img>
 
 
 ### 💻Technology
